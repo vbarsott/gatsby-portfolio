@@ -9,32 +9,31 @@
 
 ## 🧐 What's inside?
 
-This website was created with:
+The following technologies were used to develop this website:
 
 1.  **React**
 2.  **Gatsby**
-3.  **Netlify**
+3.  **Vanilla CSS**
+4.  **Netlify**
+5.  **GitHub**
 
 ## 💻 What was installed?
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
+    # Gatsby hello-world starter
+    1.
     gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
-    ```shell
+    2.
     cd my-hello-world-starter/
+    3.
     gatsby develop
-    ```
-    ```shell
-    # install gatsby packages and plugins for this portfolio
-    ```
-    .
+
+    # Gatsby packages and plugins for this portfolio
     ├── npm i -g gatsby-cli
     ├── npm i gatsby-source-filesystem
     ├── npm i gatsby-transformer-remark
     ├── npm i gatsby-image
     ├── npm i gatsby-transformer-sharp gatsby-plugin-sharp
 
-## 💫 Deploy
+## 💫 Deploy with Netlify
 
 https://vanessareactgatsbyportfolio.netlify.app/
