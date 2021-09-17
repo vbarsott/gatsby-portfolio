@@ -1,0 +1,37 @@
+Net Ninja React and Gatsby Web Warrior Guide Notes
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB
+
+Gatsby:
+- npm i -g gatsby-cli
+- Go to: https://www.gatsbyjs.com/
+- Search for Gatsby CLI commands (https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)
+- Copy: gatsby new my-awesome-blog-site https://github.com/gatsbyjs/gatsby-starter-blog
+- Change the name my-awesome-blog-site to react-gatsby-web-warrior
+- Run: gatsby develop (control c to kill)
+- Open: http://localhost:8000/
+- Go to: https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/creating-a-source-plugin/#how-to-create-a-source-plugin
+- Install: npm install gatsby-source-filesystem
+- Install: npm install gatsby-transformer-remark
+- Configure 0n gatsby-config.js: 
+
+Markdown:
+https://guides.github.com/features/mastering-markdown/
+
+Install:
+- npx create-react-app name (clean up extra files)
+- npm start
+- vanilla css
+
+Directory structure:
+- src
+  - components
+  - images
+    - featured
+    - thumbs
+  - pages
+    - projects
+  - notes
+  - projects
+  - styles
+  - templates
+

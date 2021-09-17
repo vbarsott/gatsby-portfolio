@@ -1,0 +1,75 @@
+Net Ninja React and Gatsby Web Warrior Guide Notes
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB
+
+Gatsby:
+- npm install -g gatsby-cli
+- Go to Gatsby CLI (https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)
+- Copy: gatsby new my-awesome-blog-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+- Change the name my-awesome-blog-site to react-gatsby-web-warrior
+- Run: gatsby develop (control c to kill)
+- For react view: http://localhost:8000/
+- For graphql view: http://localhost:8000/___graphql
+
+Gatsby plugins: (https://www.gatsbyjs.com/docs/how-to/plugins-and-themes)
+- Source-filesystem: to enable the use of files and add them to graphql layer (make queries)
+  - Install: npm install gatsby-source-filesystem
+  - Configure it on gatsby-config.js (make sure to restart the server after changing config)
+- Transformer-remark: transform markdown into useful interface in the graphql layer
+  - Install: npm install gatsby-transformer-remark
+  - Include it on gatsby-config.js (registered as string)
+- Image: to give access to the img component
+  - Install: npm install gatsby-image
+  - Create an images folder (inside src)
+- Transformer-sharp & Plugin-sharp: responsible for processing the images and giving the graphql interface
+  - Install: npm install gatsby-transformer-sharp gatsby-plugin-sharp
+  - Include it on gatsby-config.js (registered as string)
+
+If we have error because of images:
+- kill the server, delete .cache and public folders, restart server
+
+Featured images:
+- Include the metadatas (thumb and featuredImg) on .md files
+- Create folders featured and thumbs (inside images folder)
+- Generate the query with graphql
+
+For markdowns:
+https://guides.github.com/features/mastering-markdown/
+
+For styling:
+- vanilla css (global.css, home.module.css, project-details.module.css, projects.module.css)
+
+For deploying with Netlify:
+- Run: gatsby build (kill server first)
+All files will be generated inside public folder
+- Go to Netlify and create a new site
+- Drag and drop public folder inside Netlify
+- Click on the url to deploy (https://vanessareactgatsbyportfolio.netlify.app)
+
+Continuous deployment (with GitHub)
+- Create a repository on GitHub
+- Copy:
+git remote add origin "githuburl"
+git branch -M main
+- Paste on the directory
+- git add .
+- git commit ...
+- git push origin main
+
+Connect with Netlify:
+- 
+
+
+Directory structure:
+- src
+  - components
+  - images
+    - featured
+    - thumbs
+    - banner,png
+  - pages
+    - projects
+  - notes (foo.txt, bar.txt)
+  - projects
+  - styles (global.css, home.module.css, project-details.module.css, projects.module.css)
+  - templates
+
