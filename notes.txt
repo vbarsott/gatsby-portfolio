@@ -56,8 +56,15 @@ git branch -M main
 - git push origin main
 
 Connect with Netlify:
-- 
+- Find the site on Netlify and deploy
 
+To make changes and push:
+- Create a new branch: git checkout -b "name"
+- git add .
+- git commit ...
+- git push origin "name"
+- Make a pull request to merge into the main branch
+As this is linked to github, it will build automatically on Netlify and publish
 
 Directory structure:
 - src
